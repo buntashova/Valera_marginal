@@ -1,13 +1,22 @@
 #!/usr/bin/env ruby
 
+# require "singleton"
+
 class Valera
 	
+	def initialize
+		@health = 100
+		@mana = 0
+		@cheerfulness = 0
+		@tired = 0
+		@money = 0
+	end
 	attr_accessor :health
 	attr_accessor :mana 
 	attr_accessor :cheerfulness 
 	attr_accessor :tired 
 	attr_accessor :money
-	
+	#include Singleton
 	# def health
 	# 	@health
 	# end
@@ -34,7 +43,6 @@ class Valera
 	# end
 	# def tired=(val)
 	# 	@tired = val
-	# 	puts @tired
 	# end
 
 	# def money
@@ -43,10 +51,12 @@ class Valera
 	# def money=(val)
 	# 	@money = val
 	# end
-	# include Singleton
+	
 
 end
 
 a = Valera.new
-a.tired = "5"
 puts a.tired
+a.tired=(10)
+puts a.tired
+
