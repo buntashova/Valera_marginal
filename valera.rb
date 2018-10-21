@@ -10,12 +10,14 @@ class Valera
 		@cheerfulness = 0
 		@tired = 0
 		@money = 0
+		@alive = true
 	end
 	attr_accessor :health
 	attr_accessor :mana 
 	attr_accessor :cheerfulness 
 	attr_accessor :tired 
 	attr_accessor :money
+	attr_accessor :alive
 	#include Singleton
 	# def health
 	# 	@health
@@ -54,9 +56,3 @@ class Valera
 	
 
 end
-
-a = Valera.new
-puts a.tired
-a.tired=(10)
-puts a.tired
-
