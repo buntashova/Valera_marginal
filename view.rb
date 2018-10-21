@@ -1,4 +1,4 @@
-class view	
+class View
 	def welcome
 		puts "Приветствуем маргинальных личностей\n"
 	end
@@ -23,10 +23,10 @@ class view
 		puts "Жизнерадостность = #{valera.cheerfulness}\n"
 		puts "Усталость = #{valera.tired}\n"
 		puts "Деньги = #{valera.money}\n"
-		puts " Жив ли Валера? = #{valera.alive}\n"
+		puts "Жив ли Валера? = #{valera.alive}\n"
 	end
-	
-	def dead 
+
+	def dead
 		puts "Game over"
 	end
 end
