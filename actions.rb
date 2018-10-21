@@ -9,27 +9,27 @@ class Actions
     human.tired = 100 if human.tired > 100
   end
 
-  # def watch_nature(human)
-  #   #
-  # end
+  def watch_nature(human)
+    #
+  end
 
-  # def netflix_n_wine(human)
-  #   #
-  # end
+  def netflix_n_wine(human)
+    #
+  end
 
-  # def go_to_bar(human)
-  #   #
-  # end
+  def go_to_bar(human)
+    #
+  end
 
-  # def drink_with_marginals(human)
-  #   #
-  # end
+  def drink_with_marginals(human)
+    #
+  end
 
-  # def sing_in_subway(human)
-  #   #
-  # end
+  def sing_in_subway(human)
+    #
+  end
 
-  # def sleep(human)
-  #   #
-  # end
+  def sleep(human)
+    #
+  end
 end
