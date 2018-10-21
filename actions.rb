@@ -26,7 +26,7 @@ class Actions
     human.tired += 10
     human.tired = 100 if human.tired > 100
     human.health -= 5
-    human.health = 0 if human.health < 0
+    human.alive = false if human.health < 0
     human.money -= 20
   end
 
@@ -38,7 +38,7 @@ class Actions
     human.tired += 40
     human.tired = 100 if human.tired > 100
     human.health -= 10
-    human.health = 0 if human.health < 0
+    human.alive = false if human.health < 0
     human.money -= 100
   end
 
@@ -50,7 +50,7 @@ class Actions
     human.tired += 80
     human.tired = 100 if human.tired > 100
     human.health -= 80
-    human.health = 0 if human.health < 0
+    human.alive = false if human.health < 0
     human.money -= 150
   end
 

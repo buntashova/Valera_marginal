@@ -22,8 +22,7 @@ class View
 		puts "Алкоголь в крови = #{valera.mana}\n"
 		puts "Жизнерадостность = #{valera.cheerfulness}\n"
 		puts "Усталость = #{valera.tired}\n"
-		puts "Деньги = #{valera.money}\n"
-		puts "Жив ли Валера? = #{valera.alive}\n"
+		puts "Деньги = #{valera.money}\n\n"
 	end
 
 	def dead
