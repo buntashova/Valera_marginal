@@ -17,7 +17,7 @@ class View
 	end
 
 	def stats(valera)
-		puts "Статус Валеры:\n"
+		puts "\nСтатус Валеры:\n"
 		puts "Здоровье = #{valera.health}\n"
 		puts "Алкоголь в крови = #{valera.mana}\n"
 		puts "Жизнерадостность = #{valera.cheerfulness}\n"
@@ -27,5 +27,9 @@ class View
 
 	def dead
 		puts "Game over"
+	end
+
+	def print(msg)
+		puts "#{msg}\n"
 	end
 end
