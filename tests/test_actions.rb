@@ -2,7 +2,7 @@ require "test/unit"
 require_relative "../valera.rb"
 require_relative "../actions.rb"
 
-class ContTest < Test::Unit::TestCase
+class ActionsTest < Test::Unit::TestCase
   def setup
     @act = Actions.new
     @val = Valera.new
