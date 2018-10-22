@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative 'lib/controller.rb'
+require_relative "lib/controller.rb"
 
 controller = Controller.new
 controller.game

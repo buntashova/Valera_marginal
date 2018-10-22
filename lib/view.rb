@@ -13,7 +13,7 @@ class View
     puts "6. Исполнить арию в метро"
     puts "7. Спать"
     puts "8. Выход из игры"
-    return var = gets.chomp
+    gets.chomp
   end
 
   def stats(valera)
@@ -23,10 +23,6 @@ class View
     puts "Жизнерадостность = #{valera.cheerfulness}\n"
     puts "Усталость = #{valera.tired}\n"
     puts "Деньги = #{valera.money}\n\n"
-  end
-
-  def dead
-    puts "Game over"
   end
 
   def print(msg)

@@ -1,7 +1,6 @@
-#!/usr/bin/env ruby
-
 class Valera
-    
+  attr_accessor :health,:mana,:cheerfulness,:tired,:money,:alive
+
   def initialize
     @health = 100
     @mana = 0
@@ -10,12 +9,4 @@ class Valera
     @money = 0
     @alive = true
   end
-
-  attr_accessor :health
-  attr_accessor :mana 
-  attr_accessor :cheerfulness 
-  attr_accessor :tired 
-  attr_accessor :money
-  attr_accessor :alive
-
 end

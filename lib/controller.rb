@@ -1,8 +1,6 @@
-#!/usr/bin/env ruby
-
-require_relative 'valera.rb'
-require_relative 'actions.rb'
-require_relative 'view.rb'
+require_relative "valera.rb"
+require_relative "actions.rb"
+require_relative "view.rb"
 
 class Controller
   def initialize
@@ -19,33 +17,33 @@ class Controller
       user_action = @view.get_user_action
 
       case user_action
-      when '1'
+      when "1"
         if @valera.mana < 50 and @valera.tired < 10
           @action.go_to_work(@valera)
         else
-          @view.print('Пьяный уставший Валера не может пойти на работу')
+          @view.print("Пьяный уставший Валера не может пойти на работу")
         end
-      when '2'
+      when "2"
         @action.watch_nature(@valera)
-      when '3'
+      when "3"
         @action.netflix_n_wine(@valera)
-      when '4'
+      when "4"
         @action.go_to_bar(@valera)
-      when '5'
+      when "5"
         @action.drink_with_marginals(@valera)
-      when '6'
+      when "6"
         @action.sing_in_subway(@valera)
-      when '7'
+      when "7"
         @action.sleep(@valera)
-      when '8'
+      when "8"
         exit_game = true
       else
-        puts 'Unknown action'
+        @view.print("Неизвестный пункт меню")
       end
 
       if not @valera.alive
         exit_game = true
-        puts 'Валерий помер =('
+        @view.print("Валерий помер =(")
       end
 
       break if exit_game
